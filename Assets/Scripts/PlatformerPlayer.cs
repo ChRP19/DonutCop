@@ -37,9 +37,10 @@ public class PlatformerPlayer : MonoBehaviour
 
         if (transform.position.x < -4)
         {
-            forwardForce = 2f;
+            forwardForce = 1f;
             _body.velocity = new Vector2(forwardForce, 0);
         }
+        
 
         if ((grounded || !doubleJump) && (Input.GetKeyDown(KeyCode.Space)))
         {
