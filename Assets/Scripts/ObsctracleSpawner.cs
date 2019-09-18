@@ -38,7 +38,7 @@ public class ObsctracleSpawner : MonoBehaviour
 
     IEnumerator SpawnRandomPlatforms()
     {
-        yield return new WaitForSeconds(Random.Range(1.5f, 4.5f));
+        yield return new WaitForSeconds(Random.Range(4.5f, 6.5f));
 
         int index = Random.Range(0, obstraclesToSpawn.Count);
 
