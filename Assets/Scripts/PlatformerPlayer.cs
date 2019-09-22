@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformerPlayer : MonoBehaviour
 {
-    public float forwardForce = 0f;
+    private float forwardForce = 0f;
     public float jumpForce = 12.0f;
     bool doubleJump = false;
 
@@ -35,13 +35,6 @@ public class PlatformerPlayer : MonoBehaviour
         if (grounded)
             doubleJump = false;
 
-        if (transform.position.x < -4)
-        {
-            forwardForce = 1f;
-            _body.velocity = new Vector2(forwardForce, 0);
-        }
-        
-
         if ((grounded || !doubleJump) && (Input.GetKeyDown(KeyCode.Space)))
         {
             _body.velocity = new Vector2(_body.velocity.x, 0);
@@ -49,9 +42,7 @@ public class PlatformerPlayer : MonoBehaviour
             _body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
             if (!grounded)
-                doubleJump = true;
-
-            
+                doubleJump = true;  
         }
     }
 }
