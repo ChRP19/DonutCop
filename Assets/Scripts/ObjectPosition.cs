@@ -13,7 +13,7 @@ public class ObjectPosition : MonoBehaviour
     }
 
     
-    void Update()
+    void FixedUpdate()
     {
         rb.velocity = new Vector2(speed, 0);
     }
