@@ -9,19 +9,19 @@ public class PlatformerPlayer : MonoBehaviour
     bool doubleJump = false;
 
     private Rigidbody2D _body;
-    private CircleCollider2D _circle;
+    private CapsuleCollider2D _capsule;
  
     void Start()
     {
         _body = GetComponent<Rigidbody2D>();
-        _circle = GetComponent<CircleCollider2D>();
+        _capsule = GetComponent<CapsuleCollider2D>();
     }
 
     void Update()
     {
   
-        Vector3 max = _circle.bounds.max;
-        Vector3 min = _circle.bounds.min;
+        Vector3 max = _capsule.bounds.max;
+        Vector3 min = _capsule.bounds.min;
         Vector2 corner1 = new Vector2(max.x, min.y - .1f);
         Vector2 corner2 = new Vector2(min.x, min.y - .2f);
         Collider2D hit = Physics2D.OverlapArea(corner1, corner2);
