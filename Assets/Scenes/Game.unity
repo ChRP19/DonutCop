@@ -152,10 +152,10 @@ RectTransform:
   m_Father: {fileID: 1528954324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -745.7, y: 455}
-  m_SizeDelta: {x: 150.7, y: 88.2}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 230, y: -93}
+  m_SizeDelta: {x: 150.70001, y: 88.20001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239065714
 MonoBehaviour:
@@ -440,9 +440,9 @@ RectTransform:
   m_Father: {fileID: 1528954324}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 836, y: 455}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -124, y: -85}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1521524000
@@ -808,12 +808,12 @@ PrefabInstance:
     - target: {fileID: 8003629010738430846, guid: 6b214b233f1beaa48a24d9a55c76b850,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.148525
+      value: -6.2
       objectReference: {fileID: 0}
     - target: {fileID: 8003629010738430846, guid: 6b214b233f1beaa48a24d9a55c76b850,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2627823
+      value: 3.2
       objectReference: {fileID: 0}
     - target: {fileID: 8003629010738430846, guid: 6b214b233f1beaa48a24d9a55c76b850,
         type: 3}
@@ -876,6 +876,18 @@ PrefabInstance:
     - target: {fileID: 0}
       propertyPath: m_Size.y
       value: 0.56497145
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Offset.x
+      value: 0.075929224
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.4368714
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Offset.y
+      value: -0.3257016
       objectReference: {fileID: 0}
     - target: {fileID: 5085141961613333908, guid: 6ead5c3614dbf6041bde6b0f8392162a,
         type: 3}
@@ -946,18 +958,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Offset.x
-      value: 0.075929224
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Radius
-      value: 0.4368714
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Offset.y
-      value: -0.3257016
       objectReference: {fileID: 0}
     - target: {fileID: 5085141961613333905, guid: 6ead5c3614dbf6041bde6b0f8392162a,
         type: 3}
