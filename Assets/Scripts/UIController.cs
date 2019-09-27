@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -10,13 +11,15 @@ public class UIController : MonoBehaviour
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button restartButton;
     
+    public int score = 0;
     void Start()
     {
         settingPopup.Close();
     }
     void Update()
     {
-        scoreLabel.text = Time.realtimeSinceStartup.ToString();
+        score++;
+        scoreLabel.text = score.ToString();
     }
 
     public void OnOpenSettings()
@@ -31,6 +34,7 @@ public class UIController : MonoBehaviour
 
     public void RestartGame()
     {
-        Application.LoadLevel("Game");
+        SceneManager.LoadScene("Game");
+        score = 0;
     }
 }
