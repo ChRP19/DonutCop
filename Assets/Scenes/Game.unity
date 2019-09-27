@@ -838,7 +838,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1260527112}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1893103678}
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1260527112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,7 +1150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 1.2, y: -102.6}
+  m_AnchoredPosition: {x: 1.2, y: -102.6001}
   m_SizeDelta: {x: 395.5, y: 107.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607478694
@@ -1436,6 +1447,7 @@ MonoBehaviour:
   settingPopup: {fileID: 1107330357}
   resumeButton: {fileID: 93584821}
   restartButton: {fileID: 1260527111}
+  score: 0
 --- !u!4 &1893103679
 Transform:
   m_ObjectHideFlags: 0
