@@ -6,8 +6,12 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private Text scoreLabel;
-
-    // Update is called once per frame
+    [SerializeField] private SettingPopup settingPopup;
+    
+    void Start()
+    {
+        settingPopup.Close();
+    }
     void Update()
     {
         scoreLabel.text = Time.realtimeSinceStartup.ToString();
@@ -15,6 +19,10 @@ public class UIController : MonoBehaviour
 
     public void OnOpenSettings()
     {
-        Debug.Log("Open settings");
+        if (settingPopup.gameObject.activeSelf == false)
+        {
+            settingPopup.Open();
+        }
+        else settingPopup.Close();
     }
 }
