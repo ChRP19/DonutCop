@@ -7,6 +7,8 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] private Text scoreLabel;
     [SerializeField] private SettingPopup settingPopup;
+    [SerializeField] private Button resumeButton;
+    [SerializeField] private Button restartButton;
     
     void Start()
     {
@@ -19,10 +21,16 @@ public class UIController : MonoBehaviour
 
     public void OnOpenSettings()
     {
-        if (settingPopup.gameObject.activeSelf == false)
-        {
-            settingPopup.Open();
-        }
-        else settingPopup.Close();
+        settingPopup.Open();  
+    }
+
+    public void ResumeGame()
+    {
+        settingPopup.Close();
+    }
+
+    public void RestartGame()
+    {
+        Application.LoadLevel("Game");
     }
 }
