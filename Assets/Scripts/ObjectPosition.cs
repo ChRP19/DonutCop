@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectPosition : MonoBehaviour
 {
-    public float speed = -1f;
+    public float speed = -2.7f;
     private Rigidbody2D rb;
 
     void Start()
