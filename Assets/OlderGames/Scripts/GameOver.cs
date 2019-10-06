@@ -5,9 +5,9 @@ using UnityEngine;
 public class GameOver : MonoBehaviour
 {
     [SerializeField] private GameObject UIController;
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Barrier"))
+        if (other.tag == "Barrier")
         {
             UIController.GetComponent<UIController>().RestartGame();
         }

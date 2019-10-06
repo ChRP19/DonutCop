@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5085141961613333910}
   - component: {fileID: 5085141961613333909}
   - component: {fileID: 6820537524669777517}
+  - component: {fileID: 765287336771692662}
   m_Layer: 0
   m_Name: Donut
   m_TagString: Untagged
@@ -154,3 +155,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0800333, y: -0.13544118}
   m_Size: {x: 0.8399334, y: 1.2716577}
   m_Direction: 0
+--- !u!114 &765287336771692662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085141961613333908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9400fe9e904ddf945abb82aebe833f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIController: {fileID: 0}
