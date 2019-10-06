@@ -1,3 +1,3 @@
 # Unity-DonutCop-static  
-# Develop branch  
-DonutCop 2d platformer
+# Feature branch  
+Поптытка сделать движущийся уровень префабов.
