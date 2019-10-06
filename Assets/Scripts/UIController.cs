@@ -10,8 +10,9 @@ public class UIController : MonoBehaviour
     [SerializeField] private SettingPopup settingPopup;
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button restartButton;
+
     
-    public int score = 0;                       //Временный счетчик очков
+    public static int score = 0;                       //Временный счетчик очков
     void Start()
     {
         settingPopup.Close();
