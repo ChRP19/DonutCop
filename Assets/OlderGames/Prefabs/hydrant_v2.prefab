@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 4100246368158744392}
   - component: {fileID: 4100246368158744395}
   - component: {fileID: 4100246368158744394}
-  - component: {fileID: 5722570411352207103}
-  - component: {fileID: 1652432781384178956}
+  - component: {fileID: 7228759877754239290}
   m_Layer: 0
   m_Name: hydrant_v2
   m_TagString: Barrier
@@ -102,7 +101,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &5722570411352207103
+--- !u!70 &7228759877754239290
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,22 +114,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009787619, y: 0.32945353}
-  m_Size: {x: 0.71310985, y: 0.8048042}
-  m_Direction: 0
---- !u!70 &1652432781384178956
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4100246368158744397}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.02409625, y: 0.79685354}
-  m_Size: {x: 0.3660679, y: 0.39597273}
+  m_Offset: {x: 0.025601387, y: 0.75552523}
+  m_Size: {x: 0.30984116, y: 0.862479}
   m_Direction: 0
