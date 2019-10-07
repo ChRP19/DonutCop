@@ -8,8 +8,8 @@ public class Runner2D : MonoBehaviour {
 	public Transform[] points;
 	public float speed = 5;
 
-	private string startSectionName, sectionPath;
-	private GameObject[] sectionLink; //массив из префабов уровня
+	private string startSectionName, sectionPath; // Стартовый префаб и папка с остальными шаблонами
+	private GameObject[] sectionLink; // массив из префабов уровня
 	private Transform[] section;
 	private GameObject sectionStart;
 	private List<Transform> sectionDisabled;
@@ -30,7 +30,7 @@ public class Runner2D : MonoBehaviour {
 
 	void Start()
 	{
-		minPosX = points[0].position.x; //минимальной точке присваивается позиция самой левой точки
+		minPosX = points[0].position.x; // минимальной точке присваивается позиция самой левой точки
 		addPosX = Mathf.Abs(minPosX) * 3;
 
 		StartGame();
@@ -38,9 +38,9 @@ public class Runner2D : MonoBehaviour {
 
 	void StartGame()
 	{
-		//загружаем все 
+		// загружаем все префабы уровня в массив sectionLink
 		sectionLink = Resources.LoadAll<GameObject>(sectionPath); // все префабы должны находится в папке Resources
-		if(sectionLink.Length < 2)
+		if(sectionLink.Length < 4)
 		{
 			Debug.Log(this + " Недостаточно объектов для построения уровня. Ошибка запуска игры.");
 			return;
