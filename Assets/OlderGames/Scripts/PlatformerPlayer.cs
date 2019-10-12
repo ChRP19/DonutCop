@@ -35,8 +35,8 @@ public class PlatformerPlayer : MonoBehaviour
         if (grounded)
             doubleJump = false;
 
-        //if ((grounded || !doubleJump) && (Input.GetKeyDown(KeyCode.Space)))
-        if ((grounded || !doubleJump) && (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
+        //if ((grounded || !doubleJump) && (Input.GetKeyDown(KeyCode.Space)))  // for desktop
+        if ((grounded || !doubleJump) && (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)) // for touchscreen
         {
             _body.velocity = new Vector2(_body.velocity.x, 0);
 
