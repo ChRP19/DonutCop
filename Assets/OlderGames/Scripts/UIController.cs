@@ -11,16 +11,9 @@ public class UIController : MonoBehaviour
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button restartButton;
 
-    
-    public static int score = 0;                       //Временный счетчик очков
     void Start()
     {
         settingPopup.Close();
-    }
-    void Update()
-    {
-        score++;                                //Увеличение счетчика на 1
-        scoreLabel.text = score.ToString();
     }
 
     public void OnOpenSettings()
@@ -36,6 +29,5 @@ public class UIController : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene("Game");
-        score = 0;                              //Обнуление счетчика очков
     }
 }
