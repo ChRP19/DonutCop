@@ -10,12 +10,7 @@ public class BGScaler : MonoBehaviour
         float height = Camera.main.orthographicSize * 2f;
         float width = height * Screen.width / Screen.height;
 
-        if (gameObject.name == "Bridge" || gameObject.name == "BG")
-        {
-            transform.localScale = new Vector3(width, height, 0);
-        }
-        else
-            transform.localScale = new Vector3(20.0f, 1.5f, 0);
+         transform.localScale = new Vector3(width, height, 0);
     }
 
     // Update is called once per frame
