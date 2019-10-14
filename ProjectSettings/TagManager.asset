@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collector
   - Barrier
+  - Coin
   layers:
   - Default
   - TransparentFX
