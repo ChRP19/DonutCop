@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Runner2D : MonoBehaviour {
 
 	public Transform[] points;
-	public float speed = 5;
+	public static float speed = 5;
 
 	private string startSectionName, sectionPath; // Стартовый префаб и папка с остальными шаблонами
 	private GameObject[] sectionLink; // массив из префабов уровня
@@ -32,7 +32,7 @@ public class Runner2D : MonoBehaviour {
 	{
 		minPosX = points[0].position.x; // минимальной точке присваивается позиция самой левой точки
 		addPosX = Mathf.Abs(minPosX) * 3;
-
+		speed = 5;
 		StartGame();
 	}
 
