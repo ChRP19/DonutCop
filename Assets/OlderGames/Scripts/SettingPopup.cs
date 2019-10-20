@@ -15,5 +15,9 @@ public class SettingPopup : MonoBehaviour
     {
         gameObject.SetActive(false);
         Time.timeScale = 1.0f;
+        // GameObject go = GameObject.Find("Donut");
+        // LevelSpeed levelSpeed = go.GetComponent<LevelSpeed>();
+        // float currentTime = levelSpeed.timeSpeed;
+        // Time.timeScale = currentTime;
     }
 }
