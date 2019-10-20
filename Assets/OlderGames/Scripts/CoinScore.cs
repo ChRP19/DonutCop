@@ -11,7 +11,8 @@ public class CoinScore : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
+            other.GetComponent<SpriteRenderer>().enabled = false;
             coin++;
             coinLabel.text = coin.ToString();
         }    
