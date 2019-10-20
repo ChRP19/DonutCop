@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelSpeed : MonoBehaviour
 {
-    public float timeSpeed = 1f;
+    public float timeSpeed = 0f;
     void Start()
     {
         StartCoroutine(SpeedUp());
@@ -13,9 +13,9 @@ public class LevelSpeed : MonoBehaviour
     IEnumerator SpeedUp()
     {
         yield return new WaitForSeconds(3);
-        //Runner2D.speed = Runner2D.speed + 0.1f;
-        timeSpeed = Time.timeScale + 0.002f;
-        Time.timeScale = timeSpeed;
+        Runner2D.speed = Runner2D.speed + 0.1f;
+        // timeSpeed = Time.timeScale + 0.02f;
+        // Time.timeScale = timeSpeed;
         StartCoroutine(SpeedUp());
     }
 }
