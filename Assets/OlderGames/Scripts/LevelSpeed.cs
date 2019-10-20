@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelSpeed : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float timeSpeed = 1f;
     void Start()
     {
         StartCoroutine(SpeedUp());
@@ -14,7 +14,8 @@ public class LevelSpeed : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         //Runner2D.speed = Runner2D.speed + 0.1f;
-        Time.timeScale = Time.timeScale + 0.01f;
+        timeSpeed = Time.timeScale + 0.002f;
+        Time.timeScale = timeSpeed;
         StartCoroutine(SpeedUp());
     }
 }
