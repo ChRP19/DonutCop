@@ -1900,7 +1900,7 @@ PrefabInstance:
     - target: {fileID: 1080779792344948808, guid: 278effa8678e857448022e3b4521ef91,
         type: 3}
       propertyPath: speed
-      value: 0.007
+      value: 0.07
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 278effa8678e857448022e3b4521ef91, type: 3}
@@ -1911,11 +1911,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5818598753836506118, guid: 6ead5c3614dbf6041bde6b0f8392162a,
-        type: 3}
-      propertyPath: coinLabel
-      value: 
-      objectReference: {fileID: 239065714}
     - target: {fileID: 0}
       propertyPath: m_Offset.y
       value: 0.19081593
@@ -1946,6 +1941,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5818598753836506118, guid: 6ead5c3614dbf6041bde6b0f8392162a,
+        type: 3}
+      propertyPath: coinLabel
+      value: 
+      objectReference: {fileID: 239065714}
     - target: {fileID: 765287336771692662, guid: 6ead5c3614dbf6041bde6b0f8392162a,
         type: 3}
       propertyPath: UIController
