@@ -7,7 +7,7 @@ public class CoinActivator : MonoBehaviour
     [SerializeField] private GameObject Coin;
     void Update() 
     {
-        if (Coin.activeSelf == false)
+        if (Coin.GetComponent<SpriteRenderer>().enabled == false)
         {
             StartCoroutine(Active());
         }
@@ -16,7 +16,6 @@ public class CoinActivator : MonoBehaviour
     IEnumerator Active()
     {
         yield return new WaitForSeconds(2);
-        //this.gameObject.SetActive(true);
         Coin.GetComponent<SpriteRenderer>().enabled = true;
     }
 }
