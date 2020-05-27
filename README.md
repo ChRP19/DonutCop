@@ -1,4 +1,4 @@
 # Unity-DonutCop
 # Master branch
 
-DonutCop 2d platformer
+DonutCop 2d runner
