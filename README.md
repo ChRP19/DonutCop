@@ -1,4 +1,6 @@
-# Unity-DonutCop
-# Master branch
+# DonutCop
 
-DonutCop 2d runner
+DonutCop is a 2d runner
+
+Play this:
+https://oldergames.itch.io/donutcop
